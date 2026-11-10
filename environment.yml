@@ -1,0 +1,6 @@
+name: semiconductor-research
+channels:
+  - defaults
+dependencies:
+  - python=3.12.15
+  - ipykernel=7.3.0

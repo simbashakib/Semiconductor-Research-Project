@@ -1,0 +1,17 @@
+# Local datasets
+/data/raw/**
+/data/processed/**
+
+# Python environments and generated files
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local credentials and macOS metadata
+.env
+.env.*
+!.env.example
+.DS_Store

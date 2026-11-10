@@ -106,3 +106,51 @@ Python version, and notebook execution still require verification.
 Files modified in this step are `AGENTS.md` and `research_log.md`. The next
 environment step is for Simba to activate `semiconductor-research` and check
 `python --version` in the VS Code terminal.
+
+## 2026-11-10 — Setup readiness checks
+
+Simba reported completing the commit and push. Local inspection found a clean
+working tree and `main` matching the locally recorded `origin/main` at `aa6d5e6`.
+This check used the local tracking reference without querying GitHub again.
+
+Direct execution of the project interpreter verified Python 3.12.15 and
+ipykernel 7.3.0 at `/opt/anaconda3/envs/semiconductor-research/bin/python`.
+VS Code's Microsoft Python and Jupyter extension directories are present.
+Notebook execution through the VS Code interface remains to be verified by Simba.
+
+Created `README.md` with the project introduction, current status, setup, layout,
+and version-control workflow. Created `environment.yml` using the existing
+environment's `defaults` channel and its verified Python and ipykernel versions.
+This pins the two direct dependencies but does not lock all transitive packages.
+Created `.gitignore` for local datasets, Python environments and caches,
+credentials, and macOS metadata.
+
+Files created are `README.md`, `environment.yml`, and `.gitignore`. This log was
+updated. Next, Simba should execute a small notebook cell with the project kernel,
+then review and commit the setup files. Phase 0 remains in progress until the
+notebook execution check is complete.
+
+## 2026-11-10 — Phase 0 environment verification completed
+
+Inspected Simba's executed notebook in VS Code. The selected kernel was
+`semiconductor-research (Python 3.12.15)`. The first cell completed successfully
+and displayed `/opt/anaconda3/envs/semiconductor-research/bin/python`, Python
+3.12.15, and `4` for `2 + 2`.
+
+Phase 0 established the local repository, working instructions, research protocol,
+log, directory layout, README, Git exclusions, and Conda environment specification.
+The initial documentation commits were published by Simba. The environment works
+through VS Code's notebook interface. The scratch notebook is currently unsaved.
+This entry records the execution evidence.
+
+Updated `README.md` with the verified status and this log with the phase summary.
+Updated the Phase 0 setup paragraph in `research_protocol.md` to replace outdated
+pending-configuration wording with instructions to record the verified setup.
+The final setup files and these documentation changes await Simba's review,
+commit, and push.
+
+Remaining uncertainty concerns the research itself, including supplier links,
+source verification, and the open methodological decisions in the protocol.
+No empirical findings have been produced. The next research step is Phase 1,
+beginning with TSMC's business model, semiconductor-material inputs, and evidence
+for its supplier relationships.

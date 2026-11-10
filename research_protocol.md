@@ -55,9 +55,9 @@ Create useful artifacts as needed and exclude local data and environment files
 from Git where appropriate.
 
 Completion requires a verified notebook execution environment, documented setup,
-and an initial commit published to the intended GitHub repository. Python and
-package versions, the GitHub repository name, and its visibility remain to be
-confirmed during setup.
+and an initial commit published to the intended GitHub repository. Record verified
+Python and package versions in the environment specification and research log.
+Simba manages the GitHub repository and its visibility.
 
 ## Phase 1 — Industry research and supply-chain mapping
 
