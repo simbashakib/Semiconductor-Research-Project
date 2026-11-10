@@ -30,6 +30,9 @@ performance. Negative findings are legitimate research outcomes.
 - Use simple, transparent methods first. Add complexity only when justified.
 - Use VS Code for editing, its terminal, and Jupyter notebooks. GitHub Desktop
   is available for reviewing changes, committing, and publishing the repository.
+- Simba handles commits and pushes himself to learn version control. Explain
+  the steps and review changes when helpful. Perform commits or pushes only
+  when he explicitly asks you to do so.
 
 ## Session continuity and controlled changes
 

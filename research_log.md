@@ -86,3 +86,23 @@ and VS Code notebook kernel still need setup and verification.
 Next, guide Simba through creating and activating `semiconductor-research`,
 then selecting and checking its Python interpreter in VS Code. README,
 environment documentation, and Git exclusions remain pending. Phase 0 continues.
+
+## 2026-11-10 — User-led version control and environment creation
+
+Simba clarified that he wants to handle commits and pushes himself to learn
+version control. Updated `AGENTS.md` accordingly. This supersedes the earlier
+interpretation of permission for the assistant to perform routine Git operations.
+
+The assistant previously created local commit `45bb8d0`, adding the protocol
+and research log. Its push was rejected by automatic approval review. The latest
+local status shows `main` one commit ahead of `origin/main`. Simba will handle
+uploading this commit and committing subsequent changes.
+
+Inspection of the visible VS Code terminal confirmed successful completion of
+Simba's `conda create -n semiconductor-research python=3.12 ipykernel` command.
+At that inspection the terminal still showed `(base)`. Activation, the installed
+Python version, and notebook execution still require verification.
+
+Files modified in this step are `AGENTS.md` and `research_log.md`. The next
+environment step is for Simba to activate `semiconductor-research` and check
+`python --version` in the VS Code terminal.
