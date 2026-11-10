@@ -154,3 +154,24 @@ source verification, and the open methodological decisions in the protocol.
 No empirical findings have been produced. The next research step is Phase 1,
 beginning with TSMC's business model, semiconductor-material inputs, and evidence
 for its supplier relationships.
+
+## 2026-11-10 — Phase 1 begins with TSMC
+
+Simba confirmed readiness to begin. Local Git inspection found a clean working
+tree and `main` matching the locally recorded `origin/main` following the setup
+commits. Phase 0 is complete.
+
+Located and read the business overview, raw-material sourcing, and raw-material
+risk discussion in TSMC's official 2025 Form 20-F. Created
+`references/tsmc_business_and_inputs.md` with the source URL, access date,
+reading locations, brief source observations, and a first exercise for Simba.
+Updated `README.md` to reflect Phase 1 and appended this log entry.
+
+The exercise asks Simba to explain the business, identify material dependencies,
+and reason through supply-disruption and demand-growth scenarios. The scenarios
+are prompts for economic reasoning. Formal hypotheses, named supplier links,
+and predictive relationships remain to be established. The 2025 report provides
+current background; historical studies will need time-appropriate evidence.
+
+Next, review Simba's answers, clarify the mechanisms and assumptions, then begin
+verifying individual supplier relationships against primary sources.

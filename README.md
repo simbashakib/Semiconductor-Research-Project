@@ -10,11 +10,12 @@ realistic implementation. Negative findings are valid research outcomes.
 
 ## Current status
 
-Phase 0 environment setup is complete. The repository and Python environment are
-established, and notebook execution using the project kernel in VS Code was
-verified on 10 November 2026. The final setup files await Simba's commit and push.
-Phase 1 will begin with TSMC and its semiconductor-material suppliers. Empirical
-findings will be recorded as research progresses.
+Phase 0 setup is complete. The repository and Python environment are established,
+and notebook execution using the project kernel in VS Code was verified on
+10 November 2026. Phase 1 has begun with a reading exercise on TSMC's business
+and material inputs using its 2025 Form 20-F. Supplier verification and empirical
+analysis remain pending. See `references/tsmc_business_and_inputs.md` for the
+first exercise.
 
 ## Research scope
 
