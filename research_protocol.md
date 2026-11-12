@@ -42,6 +42,30 @@ reliable sources. The initial list is a set of candidates for investigation.
 Add variables only when economic relevance and data quality justify inclusion.
 Confirm exchanges, instruments, currencies, and histories before acquisition.
 
+## Agreed equity sample and analysis scope — 12 November 2026
+
+- Use Yahoo Finance daily prices through `yfinance` for the seven original
+  semiconductor stocks and SPY, using their US-listed shares in USD.
+- Calculate simple close-to-close returns from Yahoo's `Adj Close` field.
+  Download with `auto_adjust=False`, `actions=True`, `keepna=True`, and
+  `repair=False`; do not fill missing prices or add dividends a second time.
+- Development and exploratory sample: 1 January 2010–31 December 2022.
+  Reserve 1 January 2023–31 December 2025 for final chronological testing;
+  this notebook does not download or analyse that period. Lock the predictive
+  pipeline before using it, with horizon-aware boundary exclusions.
+- Compare 2010–2015 with 2016–2022 as exploratory calendar splits. Refit the
+  SPY regressions within each period; these are not established economic regimes
+  or out-of-sample predictive tests.
+- For subgroup summaries, use design-led firms (NVDA, AMD, AVGO), foundry (TSM),
+  integrated manufacturers (MU, INTC), and equipment (ASML). These are coarse
+  activity labels, not exclusive business exposures.
+
+The universe was selected after observing co-movement. Interpret results as a
+retrospective description of these companies, not an unbiased industry sample.
+Yahoo's historical adjustments have not been independently verified or shown to
+be point-in-time inputs. Record download provenance and retain the exact raw
+inputs for subsequent upstream and predictive experiments.
+
 ## Phase 0 — Establish the research environment
 
 Set up the local repository, permanent project documentation, a reproducible
@@ -81,6 +105,18 @@ construction before implementation.
 
 **Deliverable:** A Jupyter notebook establishing the statistical properties of
 the original semiconductor universe.
+
+**Scope decision, 12 November 2026:** Close the current descriptive H1 chapter
+after adjusted-return summaries, original and SPY-residual correlations, subgroup
+comparisons, and the two-period stability check. This is preliminary evidence of
+shared variation, not a formal hypothesis acceptance. Basket construction and
+weights are deferred until the forecasting target is chosen; a dedicated
+covariance analysis is deferred until required by a target or risk question.
+Those items in the original Phase 2 scope have not been delivered. Further factor
+models are optional extensions, not prerequisites for selecting an upstream link.
+Verify the economic rationale, historical relationship, and data suitability of
+one upstream candidate before acquiring its data. Phase 1 literature and
+candidate-specific supplier verification remain open.
 
 ## Phase 3 — Upstream data acquisition
 
@@ -202,10 +238,13 @@ Resolve and record these before the corresponding empirical work. Current entrie
 are questions to settle, rather than completed design choices.
 
 - Exact supplier relationships, semiconductor exposures, and primary hypotheses.
-- Data providers, instrument identifiers, currencies, and sample coverage.
-- Return definitions, basket weights, and adjustment conventions.
+- Upstream data providers, instrument identifiers, currencies, and sample coverage;
+  the current equity choices are recorded above.
+- Forecasting targets (individual stocks, baskets, or both), basket weights, and
+  adjustment conventions for new datasets.
 - Forecast decision times, information alignment, and executable trading times.
-- Chronological split dates, permitted exploratory sample, and boundary handling.
+- Training/validation divisions within the development sample and horizon-aware
+  boundary handling; the reserved final-test dates are recorded above.
 - Primary predictors, lag choices, controls, baselines, evaluation metrics,
   inference methods, and treatment of multiple testing.
 - The evidence required to justify proceeding to trading-strategy development.

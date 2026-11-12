@@ -175,3 +175,60 @@ current background; historical studies will need time-appropriate evidence.
 
 Next, review Simba's answers, clarify the mechanisms and assumptions, then begin
 verifying individual supplier relationships against primary sources.
+
+## 2026-11-12 — Descriptive semiconductor equity chapter closed
+
+Completed `notebooks/01_semiconductor_equity_analysis.ipynb` for NVDA, AMD, AVGO,
+TSM, MU, INTC, ASML, and the SPY benchmark. Yahoo Finance data were downloaded
+through yfinance for 2010–2022, using `Adj Close` and simple daily returns without
+filling missing inputs. The saved sample has 3,271 returns per ticker, from
+5 January 2010 to 30 December 2022. The agreed 2023–2025 final test period is
+reserved and is not downloaded or analysed by this notebook.
+
+The analysis covers return summaries, original correlations, separate OLS
+regressions on SPY with intercepts, residual correlations, four business subgroups,
+and a comparison of 2010–2015 with 2016–2022. Regressions were refitted separately
+in each subperiod. These calendar splits are exploratory, not predictive tests or
+verified economic regimes. Subgroup statistics average distinct stock-pair
+correlations; within-group estimates are undefined for the single-stock foundry
+and equipment groups.
+
+| Period | Mean original stock-pair correlation | Mean SPY-residual correlation |
+| --- | ---: | ---: |
+| 2010–2015 | 0.447 | 0.162 |
+| 2016–2022 | 0.577 | 0.267 |
+
+Positive co-movement remains after SPY adjustment in both periods and is stronger
+in the later sample. The TSM–ASML residual correlation rises from 0.195 to 0.419.
+Within-group relationships are not uniformly stronger than cross-group ones.
+These are descriptive findings for selected companies; no formal uncertainty,
+causal attribution, upstream predictability, or trading performance has been
+established. Removed the unsupported AI/datacentre explanation from the notebook.
+
+The temporary addition of Samsung and SK hynix was reversed. The earlier
+ten-ticker CSV remains in local `data/raw/`; it is not asserted to be the exact
+input to the current saved results. The notebook still downloads fresh data on
+rerun, and its exact retrieval timestamp/raw snapshot was not recorded. Subsequent
+experiments need retained raw inputs and retrieval provenance. Price adjustments
+and independent session completeness remain unverified.
+
+The researcher reported a successful top-to-bottom notebook run. Saved code cells
+have consecutive execution counts 50–72 and no error outputs. Documentation cleanup
+preserved every analysis code cell and its outputs; no new market-data download
+was required. The installed project interpreter and direct library versions were
+checked: Python 3.12.15, ipykernel 7.3.0, NumPy 2.5.4, pandas 3.1.0,
+Matplotlib 3.11.2, Seaborn 0.13.2, statsmodels 0.15.0, and yfinance 1.8.0.
+The environment specification now records these direct dependencies; it is not
+a complete transitive lock or proof of a fresh environment installation.
+
+Agreed stopping point: close the descriptive H1 chapter, rather than claim the
+entire original Phase 2 scope has been delivered. Basket targets/weights are
+deferred until the forecasting target is chosen; dedicated covariance analysis
+is deferred until required. The market-plus-sector extension was discussed but
+not implemented. Candidate-specific supplier verification and literature work
+from Phase 1 remain open. Next, select and verify one upstream relationship and
+assess data suitability before acquisition.
+
+Files updated: the equity notebook, `research_protocol.md`, `research_log.md`,
+`README.md`, and `environment.yml`. No files were added to the repository.
+Review, commit, and push remain with Simba.

@@ -10,12 +10,23 @@ realistic implementation. Negative findings are valid research outcomes.
 
 ## Current status
 
-Phase 0 setup is complete. The repository and Python environment are established,
-and notebook execution using the project kernel in VS Code was verified on
-10 November 2026. Phase 1 has begun with a reading exercise on TSMC's business
-and material inputs using its 2025 Form 20-F. Supplier verification and empirical
-analysis remain pending. See `references/tsmc_business_and_inputs.md` for the
-first exercise.
+As of 12 November 2026, setup and the initial descriptive equity investigation
+are complete. The [equity notebook](notebooks/01_semiconductor_equity_analysis.ipynb)
+compares daily returns, SPY-adjusted correlations, business subgroups, and two
+development subperiods. Positive shared variation remains after SPY adjustment
+in both periods and is stronger in 2016–2022. This is descriptive evidence;
+causes, statistical significance, and predictive usefulness have not been tested.
+
+The [industry map](references/map%20of%20the%20space.md) provides the supply-chain
+overview. Candidate-specific supplier verification and the literature review
+remain open. Basket construction and a dedicated covariance analysis are deferred
+as recorded in the protocol. The next step is to select and verify one upstream
+relationship before acquiring its data.
+
+Exploratory equity data cover 2010–2022. The agreed 2023–2025 final test period
+is reserved and excluded from this notebook. The current notebook downloads
+fresh Yahoo data on each run; an exact raw snapshot for the saved results is
+not established, so revisions may change future reruns.
 
 ## Research scope
 
@@ -40,9 +51,10 @@ python --version
 ```
 
 If this environment already exists, activate it directly. The specification
-records the verified Python 3.12.15 and ipykernel 7.3.0 versions. Conda resolves
-their dependencies during creation, so this file is a minimal environment
-specification rather than a complete lock of all transitive dependencies.
+records Python 3.12.15, ipykernel 7.3.0, and the direct research-library versions
+verified in the project environment on 12 November 2026. Conda and pip resolve
+their dependencies during creation; this is not a complete lock of transitive
+dependencies or a guarantee that historical data will remain unchanged.
 
 Open a Jupyter notebook in VS Code and use **Select Kernel** to select the
 `semiconductor-research` Python environment. Check `sys.executable` in a cell
@@ -50,8 +62,9 @@ to confirm which interpreter executes the notebook. On the current machine,
 the expected interpreter is
 `/opt/anaconda3/envs/semiconductor-research/bin/python`.
 
-Research libraries will be added as the corresponding work begins, with changes
-recorded in the environment specification and research log.
+The specification includes NumPy, pandas, Matplotlib, Seaborn, statsmodels, and
+yfinance. Add further libraries when the research requires them and record the
+change in the environment specification and research log.
 
 ## Repository layout
 
