@@ -2,6 +2,9 @@
 /data/raw/**
 /data/processed/**
 
+# Downloaded source reports retained locally
+/references/**/*.pdf
+
 # Python environments and generated files
 /.venv/
 /venv/

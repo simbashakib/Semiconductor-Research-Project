@@ -232,3 +232,109 @@ assess data suitability before acquisition.
 Files updated: the equity notebook, `research_protocol.md`, `research_log.md`,
 `README.md`, and `environment.yml`. No files were added to the repository.
 Review, commit, and push remain with Simba.
+
+## 2026-11-18 — Repository review and next research task
+
+Reviewed the project instructions, protocol, complete log, industry map, README,
+environment specification, Git exclusions, and all 31 notebook cells with their
+saved outputs. The working tree was clean before this entry. Commit `70a25e1`
+records the descriptive equity work; `main` matches the locally recorded
+`origin/main`. No remote refresh was performed, so this is a local Git check.
+
+| Protocol stage | Evidence and current status |
+| --- | --- |
+| Phase 0 — Setup | Complete as previously recorded; the environment specification includes the direct research dependencies. |
+| Phase 1 — Industry research | The sourced industry map is present. Historical supplier–customer verification, the literature review, and specific predictive hypotheses remain open. |
+| Phase 2 — Equity analysis | The descriptive H1 chapter is closed under the 12 November scope decision. Basket construction and dedicated covariance analysis remain deferred, not completed. |
+| Phase 3 — Upstream data | A justified, audited upstream dataset has not yet been assembled. The ten-ticker equity CSV is an earlier experiment, not that deliverable. |
+| Phases 4–7 — Upstream relationships, prediction, validation, trading | No upstream lead–lag estimates, predictive models, final-test results, or cost-aware trading results are recorded. The equity subgroup and period comparisons are descriptive preparatory work. |
+
+The notebook remains valid nbformat-4, contains 23 code cells with saved execution
+counts 50–72, and has no saved error outputs. Code syntax and environment YAML
+were checked; no new notebook execution or market-data download was performed.
+The saved means remain 0.447/0.162 before/after SPY adjustment in 2010–2015 and
+0.577/0.267 in 2016–2022. These findings support further investigation of shared
+variation, not causal attribution, formal significance, or predictive performance.
+
+The key reproducibility gap remains the absence of an exact raw snapshot tied to
+the saved seven-stock results. Current background filings in the industry map
+also do not establish that each supplier relationship existed throughout
+2010–2022. Preserve the reserved 2023–2025 final test and resolve historical
+evidence and timing before predictive analysis.
+
+Next task: screen one upstream supplier–customer relationship before acquiring
+data. Entegris–TSMC is proposed as the first candidate to investigate, not yet an
+approved predictive signal or dataset addition. The short screening note should
+identify dated primary evidence, the supplied product and economic transmission
+mechanism, why information might lead rather than be priced simultaneously, and
+the suitability of the intended stock listings and histories. Record a reasoned
+proceed/reject decision; expand the candidate set only if the pilot requires it.
+Forecast targets, precise information cutoffs, development validation splits,
+and inference choices still need definition before a predictive experiment.
+
+Starting sources located for the screening task:
+[TSMC's 2018 annual report, section 5.3.4](https://investor.tsmc.com/static/annualReports/2018/english/ebook/files/basic-html/page80.html)
+and [Entegris' 19 October 2011 Taiwan facility announcement](https://www.entegris.com/en/home/about-us/news/news101911.html).
+These are historical research leads. Distinguish a list of major worldwide
+suppliers or regional operations from evidence of an actual bilateral purchasing
+relationship; neither implies a predictive return signal or full-period coverage.
+
+Only this log was modified during the repository review. The next supplier
+investigation is a research task, not a new empirical finding or phase completion.
+
+## 2026-11-18 — Uploaded report review and focused analysis proposal
+
+Simba delegated large-document reading and synthesis to concentrate his own work
+on quantitative analysis. Screened 46 uploaded PDFs: 40 unique documents,
+7,976 unique PDF pages. Extracted searchable text where available, examined
+relevant business, manufacturing, supply and contract sections, and visually
+checked the key evidence pages. This was a targeted review, not a page-by-page
+reading of every document. Extraction and rendered-page intermediates remain
+outside the repository.
+
+Six TSMC reports are duplicated in the NVIDIA folder. The Micron files are
+Schedule 14A proxy statements rather than annual 10-Ks. Intel's 2003 report is
+image-only and outside the development window; some later Intel text layers are
+garbled, so relevant pages were checked visually. Originals were preserved.
+
+| Link or exposure | Evidence located | Interpretation and limits |
+| --- | --- | --- |
+| TSMC → NVIDIA wafer manufacture | NVIDIA FY2012, Manufacturing, printed p. 7 / PDF p. 111; FY2022, printed p. 9 / PDF p. 121 | NVIDIA explicitly names TSMC as a wafer manufacturer. This supports a direct foundry–designer link, not a forecast lead. |
+| Micron → NVIDIA memory | NVIDIA FY2018, printed p. 9 / PDF p. 116; FY2022, printed p. 9 / PDF p. 121 | NVIDIA explicitly names Micron among memory suppliers. Do not assume identical sourcing throughout 2010–2022. |
+| TSMC–ASML collaboration | TSMC 2018, section 5.6, printed p. 87 / PDF p. 45 | Names an R&D funding agreement running 31 October 2012–31 December 2017, with EUR276m funding scheduled for 2013–2017. Expired contract; not a measure of equipment purchases or proof of continuation. |
+| Entegris and wafer-materials candidates | TSMC 2015, printed pp. 70–71 / PDF p. 37; 2018, pp. 78–79 / PDF p. 41; 2022, pp. 104–105 / PDF p. 54 | Names Entegris under chemicals and gases, and SUMCO/Siltronic under raw wafers. Category listings do not establish bilateral purchasing volumes or continuous relationships. |
+| Intel's mixed activities | Intel 2022, Fundamentals of Our Business, printed p. 8 / PDF p. 12 | Describes internal factories, third-party foundry capacity and foundry services. Existing group labels are coarse exposures, not exclusive business models. |
+
+Source files: NVIDIA's `2012-annual-report-insert-web-ir-update.pdf`,
+`2018_annual-report-insert-web-ir-update.pdf` and
+`2022-annual-report-insert-web-IR-update.pdf`; TSMC's `e_11.pdf` (2015),
+`e_all_5.pdf` (2018) and `2022 Annual Report-E.pdf`; Intel's
+`0000050863-23-000039.pdf` (2022), all under the respective `references/` folders.
+Filled the existing `references/entegris_tsmc.md` screening note with evidence,
+mechanisms and limits. Exact publication dates remain unverified. Later reports
+were screened for context, not used as historical predictive inputs.
+
+Proposed next study: compare the economically linked TSM–NVDA, MU–NVDA and
+TSM–ASML pairs using the existing panel; consider ENTG–TSM as the first materials
+extension, subject to Simba's agreement and data audit. Focus on same-day
+stability and one-session lead–lag relationships in both directions, before
+formal forecasts at the agreed 1/5/20/60-day horizons. Lagged daily-return
+correlations and cumulative-horizon forecasts are different objects. These
+analyses have not been implemented or approved as a fixed predictive design.
+
+Same-day SPY adjustment is useful descriptively but leaves semiconductor-wide
+influences; it does not isolate causal transmission. A predictive experiment
+still needs timestamped information, baselines, chronological validation and
+dependence-aware inference. No new price data, correlations, forecasts or trading
+results were produced; 2023–2025 remains reserved. The protocol, notebook and
+datasets were unchanged. Phase 1 literature and precise predictive design remain
+open; a complete supplier census is not a prerequisite for the proposed pilot.
+
+## 2026-11-18 — Keep downloaded reports outside Git
+
+Simba requested that the large downloaded reports remain local rather than be
+uploaded to GitHub. The PDFs were untracked, not staged or committed, in the
+inspected checkout. Added `/references/**/*.pdf` to `.gitignore`; source reports
+remain on disk and research Markdown remains eligible for version control.
+Local PDF links require the corresponding downloads on another computer.
+No report was deleted and no commit, push or history rewrite was performed.
