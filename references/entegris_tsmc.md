@@ -53,19 +53,3 @@ Operational lead times do not establish delayed stock-price adjustment.
 Evidence against a useful leading signal would include unstable signs, no
 improvement over market/sector and own-history baselines, or effects that vanish
 under chronological validation. Same-day correlation alone is insufficient.
-
-## Proceed/reject decision and remaining gaps
-
-**Recommendation:** retain Entegris as the first materials-equity candidate for a
-bounded exploratory study. This is a recommendation for Simba's agreement, not
-an adopted dataset change or a confirmed predictive signal.
-
-Before acquisition, check the intended ENTG instrument, US session alignment,
-history and adjustment fields. Retain the exact raw snapshot and retrieval
-settings. Use the agreed development window and preserve the final test period.
-Treat full-period analysis as retrospective; the supplied evidence does not
-establish that this link was publicly documented throughout the sample.
-
-Specific products, economic dependence and historical public disclosure dates
-remain unresolved. A targeted source check can address these if the pilot warrants
-it; an exhaustive supplier census is unnecessary before exploratory analysis.
