@@ -5,6 +5,11 @@
 # Downloaded source reports retained locally
 /references/**/*.pdf
 
+# Local research planning and working instructions
+/research_log.md
+/AGENTS.md
+/research_protocol.md
+
 # Python environments and generated files
 /.venv/
 /venv/
